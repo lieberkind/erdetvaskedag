@@ -22,7 +22,7 @@ Route::get('/', function()
 			->take(5)
 			->get();
 
-	$washingday = $washingdays ? $washingdays->first()->isToday() : false;
+	$washingday = !$washingdays->isEmpty() ? $washingdays->first()->isToday() : false;
 
 	if($washingday) $washingdays->shift();
 
