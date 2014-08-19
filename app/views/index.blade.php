@@ -21,9 +21,13 @@
 		<h2 class="upcomming-washing-days-title">Kommende vaskedage:</h2>
 		<ul class="upcomming-washing-days">
 
-			@foreach($washingdays as $washingday)
-				<li>{{ $washingday->format() }}</li>
-			@endforeach
+			@if($washingdays)
+				@foreach($washingdays as $washingday)
+					<li>{{ $washingday->format() }}</li>
+				@endforeach
+			@else
+				<p>Der er ingen kommende vaskedage</p>
+			@endif
 		</ul>
 
 	</div>
