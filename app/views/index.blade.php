@@ -15,7 +15,7 @@
 			<h3 class="is-it-washingday-subtitle">Det er vaskedag i dag!</h3>
 		@else
 			<h1 class="is-it-washingday">Nej</h1>
-			<h3 class="is-it-washingday-subtitle">Det er ikke vaskedag i dag.</h3>
+			<h3 class="is-it-washingday-subtitle">Men det er smårettelser-på-Kohberg-dag!</h3>
 		@endif
 
 		<h2 class="upcomming-washing-days-title">Kommende vaskedage:</h2>
